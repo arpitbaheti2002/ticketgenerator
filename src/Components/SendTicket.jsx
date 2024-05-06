@@ -4,7 +4,7 @@ import './SendTicket.css';
 function SendTicket() {
   const [formData, setFormData] = useState({
     name: '',
-    regNo: '',
+    regno: '',
     email: '',
     confirmedEvents: '',
     tranID: ''
@@ -33,7 +33,7 @@ function SendTicket() {
       alert('Tickets sent!');
       setFormData({
         name: '',
-        regNo: '',
+        regno: '',
         email: '',
         confirmedEvents: '',
         tranID: ''
@@ -54,7 +54,7 @@ function SendTicket() {
         <br />
         <label className="label">
           Registration No:
-          <input type="text" name="regNo" value={formData.regNo} onChange={handleChange} className="input" />
+          <input type="text" name="regno" value={formData.regno} onChange={handleChange} className="input" />
         </label>
         <br />
         <label className="label">
